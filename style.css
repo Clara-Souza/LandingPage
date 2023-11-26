@@ -11,7 +11,7 @@ body{
 header {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(0deg, rgba(208,246,124,1) 10%, rgba(196,247,90,1) 75%);
 }
 
@@ -95,14 +95,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     background-color: #d1fa7b;
 }
 
 .justify-content {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .column {
@@ -121,7 +121,7 @@ main {
 
 footer {
     border-top: 1px solid rgba(0, 0, 0, 0.39);
-    width: 100vw;
+    width: 100%;
     background-color: #d7dfc5;
 }
 
@@ -135,6 +135,8 @@ footer {
     font-size: 18px;
     font-weight: bold;
     padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .description{
@@ -154,7 +156,7 @@ header li:hover {
 
 .upButton {
     display: none;
-    top: 90%;
+    top:90%;
     right: 88%;
     position:sticky;
     padding: 17px;
@@ -168,3 +170,82 @@ header li:hover {
     cursor: pointer;
     background-color: rgb(128, 128, 128);
 }
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line{
+    height: 3px;
+    background-color: rgb(23, 141, 23);
+}
+
+@media (max-width: 800px) {
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menu nav ul{
+        display: none;
+        flex-direction: column;
+        left: 0;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+    }
+
+    .menu li:hover {
+        background-color: rgba(128, 128, 128, 0.747);
+    }
+
+    .container, .container2 {
+        width: 98%;
+    }
+    .containerTitle,.containerTitle2{
+        width: 88%;
+        margin-bottom: 30px
+    }
+
+    .content, .content2 {
+        width: 94%;
+    }
+}
+
+@media (max-width: 700px) {
+    .especialidades {
+        flex-direction: column;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+    .content, .content2 {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column-reverse;
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .content, .content2 {
+        flex-direction: column;
+    }
+    .content {
+        flex-direction: column-reverse;
+    }
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+}
+
