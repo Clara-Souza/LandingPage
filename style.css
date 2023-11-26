@@ -1,0 +1,170 @@
+*{
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(208,246,124,1) 10%, rgba(196,247,90,1) 75%);
+}
+
+.container{
+    display:flex;
+    width: 88%;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container2{
+    display:flex;
+    width: 88%;
+}
+
+.logoMarca{
+    display: flex;
+
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+
+.menu ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    padding: 20px;
+    font-size: 18px;
+   
+}
+
+.containerTitle,.containerTitle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(208,246,124,1) 10%, rgba(196,247,90,1) 75%);
+}
+
+.content{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+
+.content2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+
+
+ img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #d1fa7b;
+}
+
+.justify-content {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.especialidades {
+    display: flex;
+    flex:1;
+    justify-content: space-around;
+}
+
+.specialties{
+    padding: 10px;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.39);
+    width: 100vw;
+    background-color: #d7dfc5;
+}
+
+.footerSection {
+    background-color: #d7dfc5;
+}
+
+.containerTitle,.containerTitle2{
+    border: 2px solid rgb(41, 40, 40);
+    border-radius:3px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.description{
+    padding: 10px;
+    font-size: px;
+}
+
+header li:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.contacts {
+    font-size: 13px;
+    list-style: none;
+}
+
+.upButton {
+    display: none;
+    top: 90%;
+    right: 88%;
+    position:sticky;
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+
+.upButton:hover {
+    scale: 1.1;
+    cursor: pointer;
+    background-color: rgb(128, 128, 128);
+}
